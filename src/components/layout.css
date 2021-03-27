@@ -345,8 +345,11 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+ol, ul {
+ list-style: none;
+}
 ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -358,7 +361,7 @@ ul {
   list-style-image: none;
 }
 ol {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -498,12 +501,10 @@ ul li {
   padding-left: 0;
 }
 li > ol {
-  margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 li > ul {
-  margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
