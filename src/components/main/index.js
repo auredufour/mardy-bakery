@@ -27,7 +27,7 @@ const Item = ({ title, subtitle, content }) => (
     {content && (
       <ul>
         {content.map(({ name, price, additionalPrice }) => (
-          <ItemSubTitle>{`${name} - ${price}${
+          <ItemSubTitle>{`${name} - £${price}${
             additionalPrice ? additionalPrice : ""
           }`}</ItemSubTitle>
         ))}

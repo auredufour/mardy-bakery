@@ -1,3 +1,6 @@
+console.log("GATSBY_INSTAGRAM_TOKEN", process.env.GATSBY_INSTAGRAM_TOKEN)
+require("dotenv").config({ path: "./.env" })
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -5,11 +8,8 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,13 +17,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/MBFaveIcon.png`, // This path is relative to the root of the site.
@@ -32,9 +34,10 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: process.env.INSTAGRAM_TOKEN,
+        access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
       },
     },
+    `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

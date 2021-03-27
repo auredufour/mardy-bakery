@@ -25,7 +25,7 @@ export const InstaImg = styled.li`
   display: block;
   width: 33%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 10px;
 
   img {
     display: block;
@@ -108,6 +108,7 @@ export const Insta = styled(SectionContainer)`
     font-size: 14px;
     font-weight: 500;
     display: block;
+    padding-bottom: 5px;
   }
 `
 

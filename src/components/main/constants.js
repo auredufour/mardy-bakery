@@ -2,22 +2,22 @@ export const offers = [
   {
     title: "Country Bread",
     subtitle:
-      "Wholesome country bread made with flour grown and milled in the UK",
+      "Wholesome country bread made with flour grown and milled in the UK.",
   },
   {
     title: "Lunch Boxes",
     subtitle:
-      "Weekly changing lunchboxes of honely cooking based on simplicity and seasonality",
+      "Weekly changing lunchboxes of homely cooking based on simplicity and seasonality.",
   },
   {
     title: "Pastries",
     subtitle:
-      "Wholesome country bread made with flour grown and milled in the UKPastries inspired by French patisserie and other delicious treats",
+      "Pastries inspired by French pâtisserie and other delicious treats",
   },
   {
     title: "Celebration Boxes and Large Orders",
     subtitle:
-      "Pastries inspired by Frenc patisserie and other delicious treats",
+      "Celebrate your special moments with simplicity with delicious food.",
   },
   {
     title: "Welcome Boxes for holiday lets",
@@ -57,7 +57,7 @@ export const menu = [
       {
         name: "Raspberry macarons",
         price: "0.75",
-        additionalPrice: "6 for $4",
+        additionalPrice: "6 for £4",
       },
     ],
   },
