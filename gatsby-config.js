@@ -1,4 +1,3 @@
-console.log("GATSBY_INSTAGRAM_TOKEN", process.env.GATSBY_INSTAGRAM_TOKEN)
 require("dotenv").config({ path: "./.env" })
 
 module.exports = {
