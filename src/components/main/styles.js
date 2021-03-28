@@ -32,7 +32,9 @@ export const InstaImg = styled.li`
   }
 `
 
-export const Banner = styled(SectionContainer)``
+export const Banner = styled(SectionContainer)`
+  margin-bottom: 0;
+`
 
 export const StaticImageContainer = styled.div`
   margin: 0 auto;
