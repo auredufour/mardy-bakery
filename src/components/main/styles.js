@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
 body {
-    font: 400 18px Rubik, sans-serif;
+    font: 400 18px Futura PT Light, Rubik, sans-serif;
     background-color: #FFB4AB;
     color: #D5271A;
   }
@@ -32,7 +32,9 @@ export const InstaImg = styled.li`
   }
 `
 
-export const Banner = styled(SectionContainer)``
+export const Banner = styled(SectionContainer)`
+  margin-bottom: 0;
+`
 
 export const StaticImageContainer = styled.div`
   margin: 0 auto;
