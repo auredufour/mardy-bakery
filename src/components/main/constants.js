@@ -16,8 +16,7 @@ export const offers = [
   },
   {
     title: "Celebration Boxes and Large Orders",
-    subtitle:
-      "Celebrate your special moments with simplicity with delicious food.",
+    subtitle: "Celebrate your special moments with delicious food.",
   },
   {
     title: "Welcome Boxes for holiday lets",
