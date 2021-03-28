@@ -30,6 +30,38 @@ export const InstaImg = styled.li`
   img {
     display: block;
   }
+
+  @media only screen and (max-width: 750px) {
+    width: 50%;
+    justify-content: space-around;
+
+    &:nth-child(even) {
+      text-align: left;
+      > div {
+        margin-left: 10px;
+      }
+    }
+
+    &:nth-child(odd) {
+      text-align: right;
+      > div {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    text-align: center;
+    &:nth-child(even),
+    &:nth-child(odd) {
+      text-align: center;
+
+      > div {
+        margin: 0;
+      }
+    }
+  }
 `
 
 export const Banner = styled(SectionContainer)`
@@ -41,6 +73,13 @@ export const StaticImageContainer = styled.div`
   text-align: center;
   width: 50%;
   transition: width ease 0.2s;
+  @media only screen and (max-width: 650px) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+  }
 `
 
 export const OffersContainer = styled.ul`
