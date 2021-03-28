@@ -2,9 +2,11 @@ require("dotenv").config({ path: "./.env" })
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Mardy Bakery website`,
+    description: `Mardy Bakery | homestyle bakery specialising in prepared foods, artisan breads, and desserts made with wholesome and local ingredients.`,
+    author: `info@mardybakery.com`,
+    url: "http://www.mardybakery.com",
+    keywords: "Mardy, Bakery, artisan breads, desserts, patisseries, lunch box",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,11 +23,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Mardy Bakery website`,
+        short_name: `Mardy Bakery website`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFB4AB`,
+        theme_color: `#FFB4AB`,
         display: `minimal-ui`,
         icon: `src/images/MBFaveIcon.png`, // This path is relative to the root of the site.
       },
