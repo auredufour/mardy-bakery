@@ -57,7 +57,7 @@ export const menu = [
       {
         name: "Raspberry macarons",
         price: "0.75",
-        additionalPrice: "6 for £4",
+        additionalPrice: "each or 6 for £4",
       },
     ],
   },
