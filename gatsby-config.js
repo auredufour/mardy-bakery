@@ -1,3 +1,5 @@
+require("dotenv").config({ path: "./.env" })
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -25,7 +27,13 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/MBFaveIcon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
