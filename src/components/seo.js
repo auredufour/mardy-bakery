@@ -21,6 +21,8 @@ function SEO({ description, lang, meta, title }) {
             author
             url
             keywords
+            locality
+            region
           }
         }
       }
@@ -69,6 +71,14 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `og:email`,
           content: site.author,
+        },
+        {
+          name: `og:locality`,
+          content: site.locality,
+        },
+        {
+          name: `og:og:region`,
+          content: site.region,
         },
       ].concat(meta)}
     />

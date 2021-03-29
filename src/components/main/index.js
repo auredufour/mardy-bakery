@@ -71,11 +71,18 @@ const MainPage = () => {
           ))}
         </OffersContainer>
         <ItemSubTitle color="#383838">
-          <span>Order by Friday 7PM by email – </span>
+          <span>Order by Thursday 7PM by email – </span>
           <a href="mailto:info@mardybakery.com">info@mardybakery.com</a>
         </ItemSubTitle>
         <ItemSubTitle color="#383838">
           Pay by card or cash on pick up or delivery.
+        </ItemSubTitle>
+        <ItemSubTitle color="#383838">
+          Delivers around Charlestown, Cornwall
+        </ItemSubTitle>
+        <ItemSubTitle color="#383838">
+          <span>Find our bake good at </span>
+          <a href="https://www.no1cubs.co.uk/coffee">Cubs Coffee</a>
         </ItemSubTitle>
       </Menu>
       <Insta>
