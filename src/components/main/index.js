@@ -71,7 +71,7 @@ const MainPage = () => {
           ))}
         </OffersContainer>
         <ItemSubTitle color="#383838">
-          <span>Order by Friday 7PM by email – </span>
+          <span>Order by Thursday 7PM by email – </span>
           <a href="mailto:info@mardybakery.com">info@mardybakery.com</a>
         </ItemSubTitle>
         <ItemSubTitle color="#383838">
