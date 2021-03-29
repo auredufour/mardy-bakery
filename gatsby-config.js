@@ -2,11 +2,13 @@ require("dotenv").config({ path: "./.env" })
 
 module.exports = {
   siteMetadata: {
-    title: `Mardy Bakery website`,
+    title: `Mardy Bakery`,
     description: `Mardy Bakery | homestyle bakery specialising in prepared foods, artisan breads, and desserts made with wholesome and local ingredients.`,
     author: `info@mardybakery.com`,
     url: "http://www.mardybakery.com",
     keywords: "Mardy, Bakery, artisan breads, desserts, patisseries, lunch box",
+    locality: "Charlestown",
+    region: "Cornwall",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

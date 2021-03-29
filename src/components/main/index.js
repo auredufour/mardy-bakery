@@ -77,6 +77,13 @@ const MainPage = () => {
         <ItemSubTitle color="#383838">
           Pay by card or cash on pick up or delivery.
         </ItemSubTitle>
+        <ItemSubTitle color="#383838">
+          Delivers around Charlestown, Cornwall
+        </ItemSubTitle>
+        <ItemSubTitle color="#383838">
+          <span>Find our bake good at </span>
+          <a href="https://www.no1cubs.co.uk/coffee">Cubs Coffee</a>
+        </ItemSubTitle>
       </Menu>
       <Insta>
         <Header level={2}>FOLLOW US ON INSTAGRAM</Header>

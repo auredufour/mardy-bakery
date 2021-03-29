@@ -122,8 +122,9 @@ export const Header = styled.div.attrs(({ level }) => ({
 }))`
   color: #383838;
   font-size: 24px;
-  letter-spacing: 10%;
+  letter-spacing: 6px;
   margin-bottom: 30px;
+  font-weight: 700;
 `
 
 export const InstaFeed = styled.ul`

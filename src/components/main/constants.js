@@ -24,7 +24,7 @@ export const offers = [
   },
 ]
 
-export const menu = [
+export const pastMenu = [
   {
     title: "Country Bread",
     content: [
@@ -57,6 +57,44 @@ export const menu = [
         name: "Raspberry macarons",
         price: "0.75",
         additionalPrice: "each or 6 for £4",
+      },
+    ],
+  },
+]
+
+export const menu = [
+  {
+    title: "Country Bread",
+    content: [
+      { name: "Sourdough", price: "2.80" },
+      { name: "Rye Loaf", price: "3.80" },
+    ],
+  },
+  {
+    title: "Lunch Boxes",
+    content: [
+      {
+        name:
+          "Roast squash & sage quiche + fennel, orange & endive salad + hot cross bun.",
+        price: "12.00",
+      },
+    ],
+  },
+  {
+    title: "Pastries",
+    content: [
+      {
+        name: "Mississipi mud pie",
+        price: "3.50",
+      },
+      {
+        name: "Caramelised white chocolate & hazelnut chou bun",
+        price: "3.50",
+      },
+      {
+        name: "Hot cross bun",
+        price: "1.10",
+        additionalPrice: "each or 4 for £4",
       },
     ],
   },
