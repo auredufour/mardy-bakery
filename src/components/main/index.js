@@ -18,6 +18,7 @@ import {
   OffersContainer,
   StaticImageContainer,
   hiddenStyles,
+  MenuContainer,
 } from "./styles"
 
 const Item = ({ title, subtitle, content }) => (
@@ -27,9 +28,11 @@ const Item = ({ title, subtitle, content }) => (
     {content && (
       <ul>
         {content.map(({ name, price, additionalPrice }) => (
-          <ItemSubTitle>{`${name} - £${price} ${
-            additionalPrice ? additionalPrice : ""
-          }`}</ItemSubTitle>
+          <li>
+            <ItemSubTitle>{`${name} - £${price} ${
+              additionalPrice ? additionalPrice : ""
+            }`}</ItemSubTitle>
+          </li>
         ))}
       </ul>
     )}
@@ -65,30 +68,28 @@ const MainPage = () => {
       </Offer>
       <Menu withBackground>
         <Header level={2}>MENU OF THE WEEK</Header>
-        <OffersContainer withMargin>
+        <MenuContainer withMargin>
           {menu.map(item => (
             <Item {...item} />
           ))}
-        </OffersContainer>
-        <ItemSubTitle color="#383838">
+        </MenuContainer>
+        <ItemSubTitle>
           <span>Order by Thursday 7PM by email – </span>
           <a href="mailto:info@mardybakery.com">info@mardybakery.com</a>
         </ItemSubTitle>
-        <ItemSubTitle color="#383838">
-          Pay by card or cash on pick up or delivery.
-        </ItemSubTitle>
-        <ItemSubTitle color="#383838">
-          Delivers around Charlestown, Cornwall
-        </ItemSubTitle>
-        <ItemSubTitle color="#383838">
-          <span>Find our bake good at </span>
+        <ItemSubTitle>Pay by card or cash on pick up or delivery</ItemSubTitle>
+        <ItemSubTitle>Delivers around Charlestown, Cornwall</ItemSubTitle>
+        <ItemSubTitle>
+          <span>Find our bake goods at </span>
           <a href="https://www.no1cubs.co.uk/coffee">Cubs Coffee</a>
         </ItemSubTitle>
       </Menu>
       <Insta>
-        <Header level={2}>FOLLOW US ON INSTAGRAM</Header>
+        <Header level={2} color="#000">
+          FOLLOW US ON INSTAGRAM
+        </Header>
         <a href="https://www.instagram.com/mardy.bakery/">
-          <ItemSubTitle color="#383838">@mardy.bakery</ItemSubTitle>
+          <ItemSubTitle>@mardy.bakery</ItemSubTitle>
         </a>
         <InstaFeed>
           {data.map((item, i) => {

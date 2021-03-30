@@ -1,26 +1,25 @@
 export const offers = [
   {
-    title: "Country Bread",
+    title: "BREAD",
     subtitle:
-      "Wholesome country bread made with flour grown and milled in the UK.",
+      "Wholesome country bread made with flour grown & milled in the UK",
   },
   {
-    title: "Lunch Boxes",
+    title: "LUNCH BOXES",
     subtitle:
-      "Weekly changing lunchboxes of homely cooking based on simplicity and seasonality.",
+      "Weekly changing menu of homely cooking based on simplicity & seasonality",
   },
   {
-    title: "Pastries",
-    subtitle:
-      "Pastries inspired by French pâtisserie and other delicious treats",
+    title: "PASTRIES",
+    subtitle: "Inspired by French pâtisserie & other delicious treats",
   },
   {
-    title: "Celebration Boxes and Large Orders",
-    subtitle: "Celebrate your special moments with delicious food.",
+    title: "WELCOME BOXES",
+    subtitle: "Hand crafted packages for holiday lets",
   },
   {
-    title: "Welcome Boxes for holiday lets",
-    subtitle: "Surprise your guests with a lovely food box crafted on order",
+    title: "SPECIALS",
+    subtitle: "Celebration cakes & pastry boxes",
   },
 ]
 
@@ -64,14 +63,14 @@ export const pastMenu = [
 
 export const menu = [
   {
-    title: "Country Bread",
+    title: "BREAD",
     content: [
       { name: "Sourdough", price: "2.80" },
       { name: "Rye Loaf", price: "3.80" },
     ],
   },
   {
-    title: "Lunch Boxes",
+    title: "LUNCH BOXES",
     content: [
       {
         name:
@@ -81,10 +80,10 @@ export const menu = [
     ],
   },
   {
-    title: "Pastries",
+    title: "PASTRIES",
     content: [
       {
-        name: "Mississipi mud pie",
+        name: "Mississippi mud pie",
         price: "3.50",
       },
       {
