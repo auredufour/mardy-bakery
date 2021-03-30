@@ -1,10 +1,55 @@
 import styled, { createGlobalStyle } from "styled-components"
+import FuturaBTBoldEOT from "../assets/fonts/FuturaBT-Bold.eot"
+import FuturaBTBoldWOFF2 from "../assets/fonts/FuturaBT-Bold.woff2"
+import FuturaBTBoldWOFF from "../assets/fonts/FuturaBT-Bold.woff"
+import FuturaBTBoldTTF from "../assets/fonts/FuturaBT-Bold.ttf"
+import FuturaBTMediumEOT from "../assets/fonts/FuturaBT-Medium.eot"
+import FuturaBTMediumWOFF2 from "../assets/fonts/FuturaBT-Medium.woff2"
+import FuturaBTMediumWOFF from "../assets/fonts/FuturaBT-Medium.woff"
+import FuturaBTMediumTTF from "../assets/fonts/FuturaBT-Medium.ttf"
+import FuturaBTBookEOT from "../assets/fonts/FuturaBT-Book.eot"
+import FuturaBTBookWOFF2 from "../assets/fonts/FuturaBT-Book.woff2"
+import FuturaBTBookWOFF from "../assets/fonts/FuturaBT-Book.woff"
+import FuturaBTBookTTF from "../assets/fonts/FuturaBT-Book.ttf"
 
 export const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'Futura BT-Bold';
+    src:
+      url(${FuturaBTBoldEOT}) format('embedded-opentype'),
+      url(${FuturaBTBoldWOFF2}) format('woff2'),
+      url(${FuturaBTBoldWOFF}) format('woff'),
+      url(${FuturaBTBoldTTF}) format('truetype');
+      font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Futura BT-Medium';
+    src:
+      url(${FuturaBTMediumEOT}) format('embedded-opentype'),
+      url(${FuturaBTMediumWOFF2}) format('woff2'),
+      url(${FuturaBTMediumWOFF}) format('woff'),
+      url(${FuturaBTMediumTTF}) format('truetype');
+      font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Futura BT-Book';
+    src:
+      url(${FuturaBTBookEOT}) format('embedded-opentype'),
+      url(${FuturaBTBookWOFF2}) format('woff2'),
+      url(${FuturaBTBookWOFF}) format('woff'),
+      url(${FuturaBTBookTTF}) format('truetype');
+      font-weight: normal;
+    font-style: normal;
+  }
+
 body {
-    font: 400 18px Futura PT Light, Rubik, sans-serif;
+    font-family: "Futura BT-Book";
     background-color: #FFB4AB;
-    color: #D5271A;
+    color: #000;
   }
 `
 
@@ -13,12 +58,12 @@ export const SectionContainer = styled.section`
   padding: 60px;
   max-width: 800px;
   margin: 0 auto 40px;
-
-  ${({ withBackground }) => withBackground && `background-color: #ffeeee`};
+  ${"" /* #ffeeee */}
+  ${({ withBackground }) => withBackground && `background-color: #fff`};
 `
 
 export const About = styled(SectionContainer)``
-export const Menu = styled(SectionContainer)``
+
 export const Offer = styled(SectionContainer)``
 
 export const InstaImg = styled.li`
@@ -82,10 +127,29 @@ export const StaticImageContainer = styled.div`
   }
 `
 
+export const ItemTitle = styled.p`
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+`
+
+export const ItemSubTitle = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 7px;
+
+  a {
+    color: inherit;
+  }
+
+  ${({ color }) => color && `color: ${color}`};
+`
+
 export const OffersContainer = styled.ul`
-  li {
-    border-bottom: 1px solid #d5271a;
-    margin-bottom: 15px;
+  margin-bottom: 0;
+
+  > li {
     padding-bottom: 20px;
   }
 
@@ -98,34 +162,43 @@ export const OffersContainer = styled.ul`
   ${({ withMargin }) => withMargin && `margin-bottom: 40px`};
 `
 
-export const ItemTitle = styled.p`
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 7px;
-`
+export const MenuContainer = styled(OffersContainer)`
+  border-bottom: 1px solid #e4352b;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 
-export const ItemSubTitle = styled.p`
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 7px;
+  ${ItemSubTitle} {
+    margin-bottom: 0;
 
-  a {
-    color: inherit;
+    ul {
+      margin: 0;
+    }
+
+    &:before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      margin-right: 10px;
+      background: #e4352b;
+    }
   }
-
-  ${({ color }) => color && `color: ${color}`};
 `
 
 export const Header = styled.div.attrs(({ level }) => ({
   role: "header",
   "aria-level": level,
 }))`
-  color: #383838;
-  font-size: 24px;
-  letter-spacing: 6px;
+  color: ${({ color }) => (color ? color : "#e4352b")};
+  font-size: 28px;
+  letter-spacing: 5px;
   margin-bottom: 30px;
   font-weight: 700;
+  font-family: "Futura BT-Bold";
 `
+
+export const Menu = styled(SectionContainer)``
 
 export const InstaFeed = styled.ul`
   max-width: 800px;
@@ -162,3 +235,5 @@ export const hiddenStyles = {
   height: "1px",
   overflow: "hidden",
 }
+
+// color = "#383838"
