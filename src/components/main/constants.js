@@ -59,6 +59,40 @@ export const pastMenu = [
       },
     ],
   },
+  {
+    title: "BREAD",
+    content: [
+      { name: "Sourdough", price: "2.80" },
+      { name: "Rye Loaf", price: "3.80" },
+    ],
+  },
+  {
+    title: "LUNCH BOXES",
+    content: [
+      {
+        name:
+          "Spiced roast pepper, tomato & chickpea soup + chicken, fennel & aioli sandwich + choice of dessert",
+        price: "12.00",
+      },
+    ],
+  },
+  {
+    title: "PASTRIES",
+    content: [
+      {
+        name: "Banoffee pie",
+        price: "3.50",
+      },
+      {
+        name: "Doughnut (rhubarb & custard)",
+        price: "3",
+      },
+      {
+        name: "Chocolate mousse & salted caramel",
+        price: "3",
+      },
+    ],
+  },
 ]
 
 export const menu = [
