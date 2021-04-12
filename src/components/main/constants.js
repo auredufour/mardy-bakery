@@ -94,9 +94,6 @@ export const pastMenu = [
       },
     ],
   },
-]
-
-export const menu = [
   {
     title: "BREAD",
     content: [
@@ -127,6 +124,40 @@ export const menu = [
       },
       {
         name: "Chocolate mousse & salted caramel",
+        price: "3",
+      },
+    ],
+  },
+]
+
+export const menu = [
+  {
+    title: "BREAD",
+    content: [{ name: "Rye Loaf", price: "3.80" }],
+  },
+  {
+    title: "LUNCH BOXES",
+    content: [
+      {
+        name:
+          "Asparagus & egg mayo sandwich + oxtail & vegetable broth + choice of dessert",
+        price: "12.00",
+      },
+    ],
+  },
+  {
+    title: "PASTRIES",
+    content: [
+      {
+        name: "Pear & almond tart",
+        price: "3",
+      },
+      {
+        name: "Tiramisu",
+        price: "3.50",
+      },
+      {
+        name: "Tarte tropézienne",
         price: "3",
       },
     ],
