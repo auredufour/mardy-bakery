@@ -85,6 +85,7 @@ const MainPage = () => {
         <ItemSubTitle>
           <span>Find our bake goods at </span>
           <a href="https://www.no1cubs.co.uk/coffee">Cubs Coffee</a>
+          <span> & Watergate Bay</span>
         </ItemSubTitle>
       </Menu>
       <Insta>
