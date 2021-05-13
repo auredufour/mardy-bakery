@@ -185,6 +185,27 @@ export const pastMenu = [
       },
     ],
   },
+  {
+    title: "PASTRIES",
+    content: [
+      {
+        name: "Buttermilk pudding, gooseberries & shortbread",
+        price: "3",
+      },
+      {
+        name: "Treacle tart",
+        price: "3.50",
+      },
+      {
+        name: "Cinnamon & cardamom bun",
+        price: "3",
+      },
+      {
+        name: "Paris-Brest",
+        price: "3.50",
+      },
+    ],
+  },
 ]
 
 export const menu = [
@@ -203,15 +224,19 @@ export const menu = [
         price: "3",
       },
       {
-        name: "Treacle tart",
+        name: "Strawberry & mascarpone tart",
         price: "3.50",
       },
       {
-        name: "Cinnamon & cardamom bun",
+        name: "Panna cotta with citrus caramel",
         price: "3",
       },
       {
-        name: "Paris-Brest",
+        name: "Chocolate & hazelnut entremet",
+        price: "3.50",
+      },
+      {
+        name: "Tosca cake (a classic Swedish almond cake)",
         price: "3.50",
       },
     ],
