@@ -64,7 +64,9 @@ export const SectionContainer = styled.section`
 
 export const About = styled(SectionContainer)``
 
-export const Offer = styled(SectionContainer)``
+export const Offer = styled(SectionContainer)`
+position: relative;
+`
 
 export const InstaImg = styled.li`
   display: block;
@@ -162,6 +164,10 @@ export const OffersContainer = styled.ul`
   ${({ withMargin }) => withMargin && `margin-bottom: 40px`};
 `
 
+
+export const ChristmanItemTitle = styled(ItemTitle)`
+margin-bottom: 5px;
+`
 export const MenuContainer = styled(OffersContainer)`
   border-bottom: 1px solid #e4352b;
   padding-bottom: 25px;
@@ -237,3 +243,92 @@ export const hiddenStyles = {
 }
 
 // color = "#383838"
+
+export const Image = styled.img.attrs(() => ({
+  alt: '',
+}))``
+
+export const DeerImg = styled(Image)`
+  width: 18%;
+  ${({ rotate }) => (rotate ? `transform: scaleX(-1)` : "")}
+`
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  ${Header} {
+    margin: 0 20px;
+  }
+`
+
+export const SubHeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const SubHeader = styled.p`
+  display: inline-block;
+  color: #46704b;
+  margin-top: 10px;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-family: "Futura BT-Bold";
+`
+
+export const ChristmasOrderContainer = styled(OffersContainer)`
+  padding-bottom: 10px;
+`
+
+export const HollyImg = styled(Image)`
+  width: 25%;
+  transform: scaleY(-1);
+  ${({ rotate }) => (rotate ? `transform: scale(-1)` : "")}
+`
+
+export const Details = styled.div`
+  position: relative;
+`
+
+export const DetailsImageContaner = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`
+
+export const HollyVictorian = styled(Image)`
+  width: 20%;
+`
+
+export const ChristmasItemSubTitle = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: ${`${16 * 1.5}px`};
+  margin: 0 0 2px 0;
+
+  a {
+    color: inherit;
+  }
+
+  ${({ color }) => color && `color: ${color}`};
+`
+
+export const ChristmasDetailsList = styled.ul`
+  ${ChristmasItemSubTitle} {
+    margin-bottom: 0;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      margin-right: 10px;
+      background: #e4352b;
+    }
+`

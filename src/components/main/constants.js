@@ -1,3 +1,62 @@
+export const christmasOffers = [
+  {
+    title: "Pear & Almond Tart £24 (serves 8-10)",
+    subtitles: [
+      "Delicate sweet vanilla pastry, almond & lemon frangipane & poached pears 🍐",
+      "Serve with ice cream, clotted cream, crème fraîche or custard. Or all the creams together for a superior experience!",
+      "✨Tubs of Mardy vanilla custard can be added to your order (£2.5 each)✨",
+      "Allergens: gluten, dairy, eggs & nuts (almonds)",
+    ]
+  },
+  {
+    title: "Chocolate & Salted Caramel Tart £24 (serves 8-10)",
+    subtitles: [
+      "Crisp chocolate pastry, creamy salted caramel & dark chocolate ganache 🍫",
+      "Serve with good quality crème fraîche, you’ll need the acidity to balance out the salty richness or this tart.",
+      "Allergens: gluten, dairy, eggs, nuts (almonds)",
+    ],
+  },
+  {
+    title: "Vanilla Cheesecake £24 (serves 8-10)",
+    subtitles: [
+      "Spiced biscuit base, vanilla cream cheese with a hint of lemon. My absolute fave 🥄",
+      "Serve as it is. Or top it with whatever you fancy!",
+      "Allergens: gluten, dairy, eggs",
+    ],
+  },
+  {
+    title: "Spiced Apple Cake £24 (serves 8-10)",
+    subtitles: [
+      "Soft vanilla, lemon & almond sponge with stewed spiced apples & topped with crumble",
+      "Serve with ice cream, clotted cream, crème fraîche or custard. Or all the creams together for a superior experience",
+      "✨Tubs of Mardy vanilla custard can be added to your order (£2.5 each)",
+      "Allergens: gluten, dairy, eggs & nuts (almonds)",
+    ],
+  },
+  {
+    title: "Gingernuts with Custard Filling £10 (box of 6)",
+    subtitles: [
+      "Crispy & spicy biscuits with a custard cream filling.",
+      "Allergens: gluten & dairy",
+    ],
+  },
+  {
+    title: "Orange, Pecan & Dark Chocolate Cookies £10 (box of 6)",
+    subtitles: [
+      "Completely stolen from @ravneeteats - the flavour combo is just so Christmassy and incredibly tasty: zesty orange, nutty pecans and rich chocolate, all dipped in demerara sugar before baking for that sweet, sweet crunch.",
+      "Allergens: gluten, dairy, eggs, nuts (pecans)",
+    ],
+  },
+  {
+    title: "Chocolate Chip Cookies £10 (box of 6)",
+    subtitles: [
+      "Crispy & chewy. Sweet. Nice amount of salt too. Highly addictive 🍪",
+      "Allergens: gluten, dairy, eggs"
+    ],
+  },
+]
+
+
 export const offers = [
   {
     title: "BREAD",
