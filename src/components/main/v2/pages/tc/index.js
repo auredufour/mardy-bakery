@@ -3,7 +3,7 @@ import _get from "lodash/get"
 import { Layout } from "../../components/layout"
 import {Text} from "../../components/text"
 import { Header } from '../../components/header'
-import {SubSection} from './styles'
+import {SubSection} from "./styles"
 
 export const TandC = () => {
   return (
@@ -41,8 +41,10 @@ export const TandC = () => {
         </Header>
         <Text>
           Please contact{" "}
-          <a mailto="info@mardybakery.com">info@mardybakery.com</a> to receive a
-          full copy of our privacy policy.
+          <a href="mailto:info@mardybakery.com">
+            info@mardybakery.com
+          </a>{" "}
+          to receive a full copy of our privacy policy.
         </Text>
       </SubSection>
     </Layout>

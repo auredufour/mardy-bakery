@@ -19,8 +19,9 @@ export const About = () => {
           borderRadius: "50%",
           maxWidth: "250px",
           position: "absolute",
-          top: "10rem",
+          top: "8rem",
           left: "-100px",
+          border: "4px solid rgba(320,320,320,0.3)",
         }}
       />
       <StaticImage
@@ -29,8 +30,9 @@ export const About = () => {
           borderRadius: "50%",
           maxWidth: "250px",
           position: "absolute",
-          top: "10rem",
+          top: "8rem",
           right: "-100px",
+          border: "4px solid rgba(320,320,320,0.3)",
         }}
       />
       <StaticImage
@@ -39,8 +41,9 @@ export const About = () => {
           borderRadius: "50%",
           maxWidth: "250px",
           position: "absolute",
-          bottom: "-3rem",
+          bottom: "2rem",
           left: "-100px",
+          border: "4px solid rgba(320,320,320,0.3)",
         }}
       />
       <StaticImage
@@ -49,8 +52,9 @@ export const About = () => {
           borderRadius: "50%",
           maxWidth: "250px",
           position: "absolute",
-          bottom: "-3rem",
+          bottom: "2rem",
           right: "-100px",
+          border: "4px solid rgba(320,320,320,0.3)",
         }}
       />
       <Container>

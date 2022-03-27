@@ -66,6 +66,8 @@ export const SendButton = styled.button`
   padding: 0.5rem 1rem;
   border-radius: 10px;
   align-self: flex-end;
+  text-transform: uppercase;
+  letter-spacing; 5px;
 `
 
 export const SubmissionContainer = styled.div`

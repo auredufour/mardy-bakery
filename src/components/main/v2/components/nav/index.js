@@ -27,7 +27,7 @@ export const Nav = () => {
     home: "Home",
     about: "About",
     enquiries: "Enquiries",
-    tandc: "TandCs",
+    tandc: "T&Cs",
   }
 
   return (

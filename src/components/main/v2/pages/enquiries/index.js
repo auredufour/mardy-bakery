@@ -21,9 +21,8 @@ export const Enquiries = () => {
         bespoke orders for special occasions.
       </Text>
       <Text>
-        {" "}
         Feel free to get in touch using the form belowand we will get back to
-        you as soon as possible
+        you as soon as possible!
       </Text>
       <Form
         name="contact"

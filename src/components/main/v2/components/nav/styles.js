@@ -15,7 +15,8 @@ export const NavContainer = styled.nav`
   align-item: flex-end;
   display: flex;
   justify-content: space-between;
-  margin: 2rem 0 0;
+  padding: 2rem 0 0;
+  width: 100%;
 `
 
 export const SocialMediaContainer = styled.ul`
@@ -60,7 +61,7 @@ export const MenuLink = styled(Link)`
   font-family: "Futura BT-Bold";
   text-decoration: none;
   font-size: 1.6rem;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
 
   &:hover {
     text-decoration: underline;

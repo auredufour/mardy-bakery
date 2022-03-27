@@ -37,3 +37,4 @@ export const ImageContainer = styled.div`
   width: ${({ withInfo }) => (withInfo ? "50%" : "100%")};
   text-align: center;
 `
+

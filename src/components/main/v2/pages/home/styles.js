@@ -26,8 +26,8 @@ export const ImageSection = styled.div`
   margin: 0 auto;
   text-align: center;
   position: relative;
-  top: -9rem;
-  z-index: -1
+  z-index: -1;
+  top: -4rem;
 `
 
 
