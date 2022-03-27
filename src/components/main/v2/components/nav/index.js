@@ -38,7 +38,9 @@ export const Nav = () => {
           <MenuContainer>
             {Object.keys(links).map(link => (
               <MenuItem>
-                <MenuLink to={`/${link}`}>{links[link]}</MenuLink>
+                <MenuLink to={`/${link}`} isShowing={isToggled}>
+                  {links[link]}
+                </MenuLink>
               </MenuItem>
             ))}
           </MenuContainer>
@@ -47,7 +49,7 @@ export const Nav = () => {
       <SocialMediaContainer>
         <SocialMediaItem withMarginRight>
           <a href="https://www.instagram.com/mardy.bakery/?hl=en">
-            <InstagramIcon/>
+            <InstagramIcon />
           </a>
         </SocialMediaItem>
         <SocialMediaItem>

@@ -30,6 +30,14 @@ export const SocialMediaContainer = styled.ul`
 
 export const SocialMediaItem = styled.li`
   margin-right: ${({ withMarginRight }) => (withMarginRight ? "1rem" : 0)};
+
+  a {
+    &:focus {
+      outline: solid white;
+      outline-offset: 1px;
+      border-radius: 10px;
+    }
+  }
 `
 
 //// Menu
@@ -47,6 +55,7 @@ export const Sidebar = styled.div`
   background: #e4352b;
   transition: left 0.4s ease;
   z-index: 10;
+  visibility: ${({ isShowing }) => (isShowing ? "visible" : "hidden")};
 
   @media (min-width: 800px) {
     width: calc(20% + 3rem);
@@ -71,6 +80,7 @@ export const MenuLink = styled(Link)`
   text-decoration: none;
   font-size: 1.6rem;
   letter-spacing: 6px;
+  display: ${({ isShowing }) => (isShowing ? "block" : "none")};
 
   &:hover {
     text-decoration: underline;

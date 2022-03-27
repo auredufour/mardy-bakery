@@ -69,7 +69,8 @@ export const SendButton = styled.button`
   text-transform: uppercase;
   letter-spacing; 5px;
   font-family: "Futura BT-Bold";
-  &:focus {
+
+  &:focus, &:hover {
     outline: solid white;
     outline-offset: 1px;
   }

@@ -6,17 +6,20 @@ export const Toggle = styled.button`
   flex-direction: column;
   justify-content: space-around;
   height: 2rem;
+  padding: 0 1rem;
   width: 4rem;
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0 1rem;
   margin: 0;
   z-index: 10;
   overflow: hidden;
 
   &:focus {
-    outline: none;
+      outline: solid white;
+      outline-offset: 1px;
+      border-radius: 10px;
+    }
   }
 
   div {
