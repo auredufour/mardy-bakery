@@ -17,7 +17,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/components/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#FFB4AB`,
         theme_color: `#FFB4AB`,
         display: `minimal-ui`,
-        icon: `src/images/MBFaveIcon.png`, // This path is relative to the root of the site.
+        icon: `src/components/assets/MBFaveIcon.png`, // This path is relative to the root of the site.
       },
     },
     {

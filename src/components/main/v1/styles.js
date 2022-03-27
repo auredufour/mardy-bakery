@@ -1,16 +1,16 @@
 import styled, { createGlobalStyle } from "styled-components"
-import FuturaBTBoldEOT from "../assets/fonts/FuturaBT-Bold.eot"
-import FuturaBTBoldWOFF2 from "../assets/fonts/FuturaBT-Bold.woff2"
-import FuturaBTBoldWOFF from "../assets/fonts/FuturaBT-Bold.woff"
-import FuturaBTBoldTTF from "../assets/fonts/FuturaBT-Bold.ttf"
-import FuturaBTMediumEOT from "../assets/fonts/FuturaBT-Medium.eot"
-import FuturaBTMediumWOFF2 from "../assets/fonts/FuturaBT-Medium.woff2"
-import FuturaBTMediumWOFF from "../assets/fonts/FuturaBT-Medium.woff"
-import FuturaBTMediumTTF from "../assets/fonts/FuturaBT-Medium.ttf"
-import FuturaBTBookEOT from "../assets/fonts/FuturaBT-Book.eot"
-import FuturaBTBookWOFF2 from "../assets/fonts/FuturaBT-Book.woff2"
-import FuturaBTBookWOFF from "../assets/fonts/FuturaBT-Book.woff"
-import FuturaBTBookTTF from "../assets/fonts/FuturaBT-Book.ttf"
+import FuturaBTBoldEOT from "../../assets/fonts/FuturaBT-Bold.eot"
+import FuturaBTBoldWOFF2 from "../../assets/fonts/FuturaBT-Bold.woff2"
+import FuturaBTBoldWOFF from "../../assets/fonts/FuturaBT-Bold.woff"
+import FuturaBTBoldTTF from "../../assets/fonts/FuturaBT-Bold.ttf"
+import FuturaBTMediumEOT from "../../assets/fonts/FuturaBT-Medium.eot"
+import FuturaBTMediumWOFF2 from "../../assets/fonts/FuturaBT-Medium.woff2"
+import FuturaBTMediumWOFF from "../../assets/fonts/FuturaBT-Medium.woff"
+import FuturaBTMediumTTF from "../../assets/fonts/FuturaBT-Medium.ttf"
+import FuturaBTBookEOT from "../../assets/fonts/FuturaBT-Book.eot"
+import FuturaBTBookWOFF2 from "../../assets/fonts/FuturaBT-Book.woff2"
+import FuturaBTBookWOFF from "../../assets/fonts/FuturaBT-Book.woff"
+import FuturaBTBookTTF from "../../assets/fonts/FuturaBT-Book.ttf"
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -48,7 +48,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
     font-family: "Futura BT-Book";
-    background-color: #FFB4AB;
+    background-color: #FAB4AB;
     color: #000;
   }
 `
