@@ -68,6 +68,11 @@ export const SendButton = styled.button`
   align-self: flex-end;
   text-transform: uppercase;
   letter-spacing; 5px;
+  font-family: "Futura BT-Bold";
+  &:focus {
+    outline: solid white;
+    outline-offset: 1px;
+  }
 `
 
 export const SubmissionContainer = styled.div`

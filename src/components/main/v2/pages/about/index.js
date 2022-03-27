@@ -37,7 +37,7 @@ export const About = () => {
         <ListContainer>
           <li>
             A selection of baked goods, such as choux buns, cakes, biscuits,
-            cookies, doughnuts & tarts
+            cookies, doughnuts & tarts.
           </li>
           <li>
             A variety of savoury bits, including quiches, sandwiches and salads.
@@ -46,7 +46,7 @@ export const About = () => {
         </ListContainer>
         <Text>
           While we cannot bake our own bread at the moment, we're thrilled to be
-          selling Coombeshead Farm's sourdough in our shop{" "}
+          selling Coombeshead Farm's sourdough in our shop.
         </Text>
         <Text>
           Please visit our social media pages for our daily changing menu.
