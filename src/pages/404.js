@@ -9,7 +9,6 @@ import {Layout as PageLayout} from '../components/main/v2/components/layout'
 const NotFoundPage = () => (
   <>
     <GlobalStyles />
-    <Layout>
       <SEO title="Home" />
       <PageLayout headerText="About">
         <div style={{textAlign: 'center'}}>
@@ -17,7 +16,6 @@ const NotFoundPage = () => (
           <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
         </div>
       </PageLayout>
-    </Layout>
   </>
 )
  

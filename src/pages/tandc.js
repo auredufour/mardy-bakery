@@ -9,10 +9,8 @@ import { GlobalStyles } from "../components/main/v2/styles"
 const TandCPage = () => (
   <>
     <GlobalStyles />
-    <Layout>
       <SEO title="About" />
       <TandC />
-    </Layout>
   </>
 )
 

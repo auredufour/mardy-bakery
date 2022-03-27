@@ -40,6 +40,7 @@ module.exports = {
         access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
