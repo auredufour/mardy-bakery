@@ -44,12 +44,12 @@ export const Enquiries = () => {
   return (
     <Layout headerText="TandC">
       <EnquiriesContainer>
-        {formState === "success" &&
+        {formState === "success" && (
           <Text>Your message has been succesfully send!</Text>
-        }
-        {formState === "error" &&
+        )}
+        {formState === "error" && (
           <Text>Thre was a error with your message, please try again!</Text>
-        }
+        )}
         <Text>
           At the moment, we're not taking on any wholesame orders, but we
           welcome bespoke orders for special occasions.
@@ -68,13 +68,17 @@ export const Enquiries = () => {
           >
             <input type="hidden" name="form-name" value="mb-contact" />
             <p hidden>
-              <label>
+              <label htmlFor="bot-field">
                 Don’t fill this out:{" "}
-                <input name="bot-field" onChange={handleChange} />
+                <input
+                  name="bot-field"
+                  id="bot-field"
+                  onChange={handleChange}
+                />
               </label>
             </p>
             <InputContainer>
-              <Label for="name">Name*</Label>
+              <Label htmlFor="name">Name*</Label>
               <Input
                 type="text"
                 id="name"
@@ -84,7 +88,7 @@ export const Enquiries = () => {
               />
             </InputContainer>
             <InputContainer>
-              <Label for="email">Email*</Label>
+              <Label htmlFor="email">Email*</Label>
               <Input
                 type="email"
                 id="email"
@@ -94,7 +98,7 @@ export const Enquiries = () => {
               />
             </InputContainer>
             <InputContainer width="100%">
-              <Label for="subject">Subject*</Label>
+              <Label htmlFor="subject">Subject*</Label>
               <Input
                 type="text"
                 id="subject"
@@ -103,7 +107,7 @@ export const Enquiries = () => {
               />
             </InputContainer>
             <InputContainer width="100%">
-              <Label for="email">Message*</Label>
+              <Label htmlFor="email">Message*</Label>
               <InputTextarea
                 id="message"
                 rows="5"
