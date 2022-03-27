@@ -74,3 +74,13 @@ export const SubmissionContainer = styled.div`
   display: flex;
   justify-content: flex-end;
 `
+
+export const EnquiriesContainer = styled.div`
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    margin: 2rem auto;
+    width: 70%;
+  }
+`

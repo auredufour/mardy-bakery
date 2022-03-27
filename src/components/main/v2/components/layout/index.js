@@ -5,14 +5,14 @@ import _get from "lodash/get"
 
 import { Nav } from "../nav"
 import { LogoWithInfo } from "../logo-with-info"
-import { layoutContainer, navContainer, Main, Banner } from "./styles"
+import { layoutContainer, Main, Banner, Container } from "./styles"
 import { Header } from "../header"
 
 export const Layout = ({ children, withInfo = false, headerText = 'Mardy Bakery' }) => {
  
   return (
     <div style={layoutContainer}>
-      <div style={navContainer}>
+      <Container>
         <Nav />
         <Banner role="banner">
           <Header level="1" isSROnly>
@@ -21,7 +21,7 @@ export const Layout = ({ children, withInfo = false, headerText = 'Mardy Bakery'
         </Banner>
         <LogoWithInfo withInfo={withInfo} />
         <Main>{children}</Main>
-      </div>
+      </Container>
     </div>
   )
 }

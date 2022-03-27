@@ -1,11 +1,18 @@
 import styled, { css, keyframes } from "styled-components"
 
-export const navContainer = {
-  margin: "0 auto",
-  maxWidth: "60%",
-  position: "relative",
-  width: "calc(100% - 160px)",
-}
+export const Container = styled.div`
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 820px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 60%;
+  }
+`
 
 export const layoutContainer = {
   width:"100%",

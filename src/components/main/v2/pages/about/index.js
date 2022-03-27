@@ -4,59 +4,27 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import { Layout } from "../../components/layout"
 import {Text} from '../../components/text'
-import { ListContainer, Container } from "./styles"
+import { ListContainer, Container, FoodImage, ImageContainer } from "./styles"
 
 
 
 export const About = () => {
-
-
   return (
     <Layout headerText="About">
-      <StaticImage
-        src={"../../assets/images/MB-biscuit.jpg"}
-        style={{
-          borderRadius: "50%",
-          maxWidth: "250px",
-          position: "absolute",
-          top: "8rem",
-          left: "-100px",
-          border: "4px solid rgba(320,320,320,0.3)",
-        }}
-      />
-      <StaticImage
-        src={"../../assets/images/MB-chou.jpg"}
-        style={{
-          borderRadius: "50%",
-          maxWidth: "250px",
-          position: "absolute",
-          top: "8rem",
-          right: "-100px",
-          border: "4px solid rgba(320,320,320,0.3)",
-        }}
-      />
-      <StaticImage
-        src={"../../assets/images/MB-ice-cream-cookie.jpg"}
-        style={{
-          borderRadius: "50%",
-          maxWidth: "250px",
-          position: "absolute",
-          bottom: "2rem",
-          left: "-100px",
-          border: "4px solid rgba(320,320,320,0.3)",
-        }}
-      />
-      <StaticImage
-        src={"../../assets/images/MD-pie.jpeg"}
-        style={{
-          borderRadius: "50%",
-          maxWidth: "250px",
-          position: "absolute",
-          bottom: "2rem",
-          right: "-100px",
-          border: "4px solid rgba(320,320,320,0.3)",
-        }}
-      />
+      <ImageContainer>
+        <FoodImage>
+          <StaticImage src="../../assets/images/MB-biscuit.jpg" />
+        </FoodImage>
+        <FoodImage>
+          <StaticImage src="../../assets/images/MB-chou.jpg" />
+        </FoodImage>
+        <FoodImage>
+          <StaticImage src="../../assets/images/MB-ice-cream-cookie.jpg" />
+        </FoodImage>
+        <FoodImage>
+          <StaticImage src="../../assets/images/MD-pie.jpeg" />
+        </FoodImage>
+      </ImageContainer>
       <Container>
         <Text>
           We're proud of the quality of the ingredients we use, and we carefully

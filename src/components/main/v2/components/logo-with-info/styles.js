@@ -1,18 +1,52 @@
 import styled from "styled-components"
 
-export const logoContainer = {
-  display: "flex",
-  flexDirection: "row",
-  alignContents: "flex-end",
-}
+export const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-contents: flex-end;
+  padding: 0 1rem;
 
-export const sideContainer = {
-  width: "25%",
-  textAlign: "center",
-  alignSelf: "flex-end",
-  marginBottom: "3rem",
-}
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    padding: 0;
+  }
+`
 
+export const SideContainerLeft = styled.div`
+  width: 100%;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 3rem;
+  order: 2;
+
+  @media (min-width: 1200px) {
+    order: 1;
+    width: 25%;
+  }
+`
+
+export const SideContainerRight = styled.div`
+  width: 100%;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 3rem;
+  order: 3;
+
+  @media (min-width: 1200px) {
+    width: 25%;
+  }
+`
+
+export const LogoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+`
 export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -34,7 +68,23 @@ export const layoutContainer = {
 }
 
 export const ImageContainer = styled.div`
-  width: ${({ withInfo }) => (withInfo ? "50%" : "100%")};
+  order: 1;
   text-align: center;
+  width: 100%;
+
+  img {
+    width: 300px;
+    padding: 2rem 0;
+  }
+
+  @media (min-width: 1200px) {
+    order: 2;
+    width: ${({ withInfo }) => (withInfo ? "50%" : "100%")};
+
+    img {
+      width: 480px;
+      padding: 0;
+    }
+  }
 `
 

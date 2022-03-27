@@ -5,34 +5,42 @@ import { Link } from "gatsby"
 import {Header} from '../header'
 import {Text} from '../text'
 
-import { ImageContainer, logoContainer, sideContainer } from "./styles"
+import {
+  ImageContainer,
+  Section,
+  SideContainerLeft,
+  SideContainerRight,
+  LogoContainer,
+} from "./styles"
 
 
 const Location = () => (
-  <div style={sideContainer}>
-    <Header level="3" uppercase>Location</Header>
+  <SideContainerLeft>
+    <Header level="3" uppercase>
+      Location
+    </Header>
     <Text>10A Lostwithiel Street</Text>
     <Text>Fowey PL23 1BD</Text>
-  </div>
+  </SideContainerLeft>
 )
 
 const Hours = () => (
-  <div style={sideContainer}>
+  <SideContainerRight>
     <Header level="3" uppercase>
       Opening hours
     </Header>
     <Text>Tuesday - Saturday</Text>
     <Text>10am-4pm</Text>
-  </div>
+  </SideContainerRight>
 )
-
 
 export const LogoWithInfo = ({ withInfo, headerText }) => {
   return (
-    <section style={logoContainer}>
-        <Header level="2" isSROnly>
-          Information
-        </Header>
+    <Section>
+      <Header level="2" isSROnly>
+        Information
+      </Header>
+      <LogoContainer>
         {withInfo && <Location />}
         <ImageContainer withInfo={withInfo}>
           <StaticImage
@@ -40,10 +48,10 @@ export const LogoWithInfo = ({ withInfo, headerText }) => {
             src="../../assets/images/mardy-bakery-logo.jpg"
             formats={["AUTO", "WEBP", "AVIF"]}
             alt=""
-            style={{ width: "80%", maxWidth: "500px" }}
           />
         </ImageContainer>
         {withInfo && <Hours />}
-    </section>
+      </LogoContainer>
+    </Section>
   )
 }

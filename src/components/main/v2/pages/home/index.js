@@ -12,7 +12,7 @@ export const Home = () => {
           src={"../../assets/images/shop.jpeg"}
           formats={["AUTO", "WEBP", "AVIF"]}
           alt=""
-          style={{ width: "800px", height: "600px", objectFit: "contain" }}
+          style={{ width: "100%", objectFit: "contain" }}
         />
       </ImageSection>
     </Layout>

@@ -12,11 +12,15 @@ export const hiddenStyles = {
 }
 
 export const NavContainer = styled.nav`
-  align-item: flex-end;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 0;
+  padding: 2rem 2rem 0;
   width: 100%;
+
+  @media (min-width: 1200px) {
+    padding: 2rem 0 0;
+  }
 `
 
 export const SocialMediaContainer = styled.ul`
@@ -37,12 +41,17 @@ export const BurgerToggleContainer = styled.div`
 
 export const Sidebar = styled.div`
   position: fixed;
-  width: calc(20% + 3rem);
+  width: 100%;
   height: 100%;
-  left: ${({ isShowing }) => (isShowing ? "0px" : `calc(-20% - 3rem)`)};
+  left: ${({ isShowing }) => (isShowing ? "0px" : "-100%")};
   background: #e4352b;
   transition: left 0.4s ease;
   z-index: 10;
+
+  @media (min-width: 800px) {
+    width: calc(20% + 3rem);
+    left: ${({ isShowing }) => (isShowing ? "0px" : `calc(-20% - 3rem)`)};
+  }
 `
 
 export const MenuContainer = styled.ul`
