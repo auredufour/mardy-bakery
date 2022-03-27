@@ -10,6 +10,7 @@ import {
   SendButton,
   SubmissionContainer,
   EnquiriesContainer,
+  Message,
 } from "./styles"
 
 function encode(data) {
@@ -28,6 +29,7 @@ export const Enquiries = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
+   
     const form = e.target
     fetch("/", {
       method: "POST",
@@ -37,19 +39,16 @@ export const Enquiries = () => {
         ...formValues,
       }),
     })
-      .then(() => setFormState("success"))
+      .then(() => 
+      setFormState("success"),
+      setFormValues({})
+      )
       .catch(() => setFormState("error"))
   }
 
   return (
     <Layout headerText="TandC">
       <EnquiriesContainer>
-        {formState === "success" && (
-          <Text>Your message has been succesfully send!</Text>
-        )}
-        {formState === "error" && (
-          <Text>Thre was a error with your message, please try again!</Text>
-        )}
         <Text>
           At the moment, we're not taking on any wholesame orders, but we
           welcome bespoke orders for special occasions.
@@ -59,6 +58,20 @@ export const Enquiries = () => {
           you as soon as possible!
         </Text>
         <div style={{ margin: "2rem 0" }}>
+          {formState === "success" && (
+            <Message>
+              <Text aria-live="polite">
+                🎉 Your message has been succesfully send!
+              </Text>
+            </Message>
+          )}
+          {formState === "error" && (
+            <Message>
+              <Text aria-live="polite">
+                ⚠️ Thre was a error with your message, please try again!
+              </Text>
+            </Message>
+          )}
           <form
             name="mb-contact"
             method="post"
@@ -82,6 +95,7 @@ export const Enquiries = () => {
               <Input
                 type="text"
                 id="name"
+                name="name"
                 autocomplete="name"
                 required
                 onChange={handleChange}
@@ -92,6 +106,7 @@ export const Enquiries = () => {
               <Input
                 type="email"
                 id="email"
+                name="email"
                 autocomplete="email"
                 required
                 onChange={handleChange}
@@ -102,14 +117,16 @@ export const Enquiries = () => {
               <Input
                 type="text"
                 id="subject"
+                name="subject"
                 required
                 onChange={handleChange}
               />
             </InputContainer>
             <InputContainer width="100%">
-              <Label htmlFor="email">Message*</Label>
+              <Label htmlFor="message">Message*</Label>
               <InputTextarea
                 id="message"
+                name="message"
                 rows="5"
                 required
                 onChange={handleChange}

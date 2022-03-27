@@ -86,3 +86,10 @@ export const EnquiriesContainer = styled.div`
     width: 70%;
   }
 `
+
+export const Message = styled.div`
+  background-color: white; 
+  padding: 1rem 1rem 0.8rem; 
+  margin-bottom: 1rem; 
+  border-radius: 10px;
+`
