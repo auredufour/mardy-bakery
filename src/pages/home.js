@@ -3,17 +3,17 @@ import _get from "lodash/get"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Main from "../components/main"
-import { GlobalStyles } from "../components/main/styles"
+import { Home } from "../components/main/v2/pages/home"
+import { GlobalStyles } from "../components/main/v2/styles"
 
-const TestPage = () => (
+const HomePage = () => (
   <>
     <GlobalStyles />
     <Layout>
       <SEO title="Home" />
-      <Main />
+      <Home />
     </Layout>
   </>
 )
 
-export default TestPage
+export default HomePage

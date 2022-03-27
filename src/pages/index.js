@@ -3,8 +3,8 @@ import _get from "lodash/get"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Main from "../components/main"
-import { GlobalStyles } from "../components/main/styles"
+import Main from "../components/main/v1"
+import { GlobalStyles } from "../components/main/v1/styles"
 
 const TestPage = () => (
   <>
