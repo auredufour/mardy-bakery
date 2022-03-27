@@ -45,17 +45,13 @@ export const InputContainer = styled.div`
   display: inline-block;
   margin-bottom: 1rem;
 
-  &:nth-child(2) {
+  &:nth-child(1) {
     padding-right: 0.5rem;
   }
 
-  &:nth-child(3) {
+  &:nth-child(2) {
     padding-left: 0.5rem;
   }
-`
-
-export const Form = styled.form`
-  margin: 2rem 0;
 `
 
 export const SendButton = styled.button`

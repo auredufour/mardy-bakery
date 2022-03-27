@@ -15,6 +15,10 @@ export const Toggle = styled.button`
   z-index: 10;
   overflow: hidden;
 
+  &:hover {
+    outline: none;
+  }
+
   &:focus {
       outline: solid white;
       outline-offset: 1px;
