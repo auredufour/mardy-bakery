@@ -27,7 +27,7 @@ module.exports = {
       options: {
         name: `Mardy Bakery website`,
         short_name: `Mardy Bakery website`,
-        start_url: `/`,
+        start_url: `/home`,
         background_color: `#FFB4AB`,
         theme_color: `#FFB4AB`,
         display: `minimal-ui`,
