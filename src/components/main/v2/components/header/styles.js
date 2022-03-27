@@ -18,5 +18,9 @@ export const Heading = styled.div.attrs(({ level }) => ({
   font-size: 28px;
   margin-bottom: 1rem;
   font-weight: 700;
-  font-family: "Futura BT-Bold";
+  font-family: ${({ uppercase }) =>
+    uppercase ? "Futura BT-Book" : "Futura BT-Bold"};
+  text-transform: ${({ uppercase }) => uppercase && "uppercase"};
+  letter-spacing: ${({ uppercase }) => (uppercase ? "6px" : "inherit")};
+  text-align: ${({ centered }) => (centered ? 'center' : "inherit")};
 `
