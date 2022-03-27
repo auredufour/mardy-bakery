@@ -39,10 +39,10 @@ export const Enquiries = () => {
         ...formValues,
       }),
     })
-      .then(() => 
-      setFormState("success"),
-      setFormValues({})
-      )
+      .then(() => {
+        setFormState("success")
+        setFormValues({})
+      })
       .catch(() => setFormState("error"))
   }
 
