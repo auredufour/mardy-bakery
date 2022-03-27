@@ -25,7 +25,14 @@ export const Enquiries = () => {
           you as soon as possible!
         </Text>
         <div style={{ margin: "2rem 0" }}>
-          <form name="mb-contact" method="POST" data-netlify="true" action='/enquiries'>
+          <form
+            name="mb-contact"
+            method="POST"
+            data-netlify="true"
+            action="/enquiries"
+            netlify
+          >
+            <input type="hidden" name="form-name" value="mb-contact" />
             <InputContainer>
               <Label for="name">Name*</Label>
               <Input type="text" id="name" autocomplete="name" required />
