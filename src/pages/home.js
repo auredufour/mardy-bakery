@@ -8,10 +8,8 @@ import { GlobalStyles } from "../components/main/v2/styles"
 const HomePage = () => (
   <>
     <GlobalStyles />
-    <Layout>
       <SEO title="Home" />
       <Home />
-    </Layout>
   </>
 )
 

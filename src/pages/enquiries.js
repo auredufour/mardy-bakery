@@ -12,10 +12,8 @@ import { GlobalStyles } from "../components/main/v2/styles"
 const EnquiriesPage = () => (
   <>
     <GlobalStyles />
-    <Layout>
       <SEO title="Enquiries" />
       <Enquiries />
-    </Layout>
   </>
 )
 

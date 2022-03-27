@@ -27,7 +27,7 @@ module.exports = {
       options: {
         name: `Mardy Bakery website`,
         short_name: `Mardy Bakery website`,
-        start_url: `/`,
+        start_url: `/home`,
         background_color: `#FFB4AB`,
         theme_color: `#FFB4AB`,
         display: `minimal-ui`,
@@ -40,6 +40,7 @@ module.exports = {
         access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

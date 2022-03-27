@@ -1,3 +1,16 @@
-import Home from './home'
+import React from "react"
 
-export default Home
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { Home } from "../components/main/v2/pages/home"
+import { GlobalStyles } from "../components/main/v2/styles"
+
+const HomePage = () => (
+  <>
+    <GlobalStyles />
+    <SEO title="Home" />
+    <Home />
+  </>
+)
+
+export default HomePage
