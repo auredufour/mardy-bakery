@@ -61,14 +61,14 @@ export const Enquiries = () => {
           {formState === "success" && (
             <Message>
               <Text aria-live="polite">
-                🎉 Your message has been succesfully send!
+                🎉 Your message has been successfully sent!
               </Text>
             </Message>
           )}
           {formState === "error" && (
             <Message>
               <Text aria-live="polite">
-                ⚠️ Thre was a error with your message, please try again!
+                ⚠️ There was an error with your message, please try again!
               </Text>
             </Message>
           )}
