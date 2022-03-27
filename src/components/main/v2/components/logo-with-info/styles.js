@@ -82,7 +82,7 @@ export const ImageContainer = styled.div`
     width: ${({ withInfo }) => (withInfo ? "50%" : "100%")};
 
     img {
-      width: 480px;
+      width: 460px;
       padding: 0;
     }
   }
