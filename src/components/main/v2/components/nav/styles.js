@@ -57,7 +57,12 @@ export const Sidebar = styled.div`
   z-index: 10;
   visibility: ${({ isShowing }) => (isShowing ? "visible" : "hidden")};
 
-  @media (min-width: 800px) {
+  @media (min-width: 820px) {
+    width: calc(30% + 3rem);
+    left: ${({ isShowing }) => (isShowing ? "0px" : `calc(-30% - 3rem)`)};
+  }
+
+  @media (min-width: 1200px) {
     width: calc(20% + 3rem);
     left: ${({ isShowing }) => (isShowing ? "0px" : `calc(-20% - 3rem)`)};
   }

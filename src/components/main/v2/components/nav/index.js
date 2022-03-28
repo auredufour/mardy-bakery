@@ -13,7 +13,6 @@ import {
   Sidebar,
   MenuItem,
   MenuLink,
-  hiddenStyles,
 } from "./styles"
 
 export const Nav = () => {
