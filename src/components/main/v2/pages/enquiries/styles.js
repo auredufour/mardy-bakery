@@ -45,17 +45,13 @@ export const InputContainer = styled.div`
   display: inline-block;
   margin-bottom: 1rem;
 
-  &:nth-child(2) {
+  &:nth-child(3) {
     padding-right: 0.5rem;
   }
 
-  &:nth-child(3) {
+  &:nth-child(4) {
     padding-left: 0.5rem;
   }
-`
-
-export const Form = styled.form`
-  margin: 2rem 0;
 `
 
 export const SendButton = styled.button`
@@ -89,4 +85,11 @@ export const EnquiriesContainer = styled.div`
     margin: 2rem auto;
     width: 70%;
   }
+`
+
+export const Message = styled.div`
+  background-color: white; 
+  padding: 1rem 1rem 0.8rem; 
+  margin-bottom: 1rem; 
+  border-radius: 10px;
 `

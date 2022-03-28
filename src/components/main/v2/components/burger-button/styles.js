@@ -16,10 +16,7 @@ export const Toggle = styled.button`
   overflow: hidden;
 
   &:focus {
-      outline: solid white;
-      outline-offset: 1px;
-      border-radius: 10px;
-    }
+    mb-v2-fix2
   }
 
   div {

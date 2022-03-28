@@ -51,10 +51,4 @@ body{
     background-color: #FAB4AB;
     color: #e4352b;
   }
-
-  p {
-    font-family: "Futura BT-Book";
-    background-color: #FAB4AB;
-    color: #e4352b;
-  }
 `
