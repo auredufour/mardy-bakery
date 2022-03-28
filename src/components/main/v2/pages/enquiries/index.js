@@ -50,11 +50,11 @@ export const Enquiries = () => {
     <Layout headerText="TandC">
       <EnquiriesContainer>
         <Text>
-          At the moment, we're not taking on any wholesame orders, but we
+          At the moment, we're not taking on any wholesale orders, but we
           welcome bespoke orders for special occasions.
         </Text>
         <Text>
-          Feel free to get in touch using the form belowand we will get back to
+          Feel free to get in touch using the form below and we will get back to
           you as soon as possible!
         </Text>
         <div style={{ margin: "2rem 0" }}>
