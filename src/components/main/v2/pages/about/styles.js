@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const ListContainer = styled.ul`
   margin-bottom: 0;
@@ -28,6 +28,7 @@ export const ListContainer = styled.ul`
 export const Container = styled.div`
   width: 100%;
   margin: 2rem auto 0;
+  
 
   @media (min-width: 1200px) {
     width: 60%;
@@ -35,11 +36,8 @@ export const Container = styled.div`
 `
 
 export const FoodImage = styled.div`
-  border-radius: 8.75rem;
-  border: 4px solid rgba(320, 320, 320, 0.3);
   display: inline-block;
   height: 8.75rem;
-  overflow: hidden;
   width: 8.75rem;
 
   &:nth-child(1),
@@ -82,6 +80,13 @@ export const FoodImage = styled.div`
       right: -100px;
     }
   }
+`
+
+export const staticImageStyle = css`
+  border-radius: 8.75rem;
+  border: 4px solid rgba(320, 320, 320, 0.3);
+  height: 8.75rem;
+  width: 8.75rem;
 `
 
 export const ImageContainer = styled.div`
