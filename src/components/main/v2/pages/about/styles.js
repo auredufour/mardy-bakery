@@ -42,6 +42,21 @@ export const FoodImage = styled.div`
   overflow: hidden;
   width: 8.75rem;
 
+  &:nth-child(1),
+  &:nth-child(3) {
+    margin-right: 0.25rem;
+  }
+
+  &:nth-child(2),
+  &:nth-child(4) {
+    margin-left: 0.25rem;
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    margin-top: 0.5rem;
+  }
+
   @media (min-width: 1200px) {
     position: absolute;
     width: 250px;
