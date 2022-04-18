@@ -41,16 +41,20 @@ export const Label = styled.label`
 `
 
 export const InputContainer = styled.div`
-  width: ${({ width }) => width || "50%"};
+  width: 100%;
   display: inline-block;
   margin-bottom: 1rem;
 
-  &:nth-child(3) {
-    padding-right: 0.5rem;
-  }
+  @media (min-width: 500px) {
+    width: ${({ width }) => width || "50%"};
 
-  &:nth-child(4) {
-    padding-left: 0.5rem;
+    &:nth-child(3) {
+      padding-right: 0.5rem;
+    }
+
+    &:nth-child(4) {
+      padding-left: 0.5rem;
+    }
   }
 `
 
@@ -85,6 +89,10 @@ export const EnquiriesContainer = styled.div`
     margin: 2rem auto;
     width: 70%;
   }
+`
+
+export const FormContainer = styled.div`
+  margin: 2rem 0 0;
 `
 
 export const Message = styled.div`

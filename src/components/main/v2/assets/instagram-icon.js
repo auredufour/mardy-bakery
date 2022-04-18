@@ -5,8 +5,8 @@ export const InstagramIcon = () => (
     fill="#e4352b"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 50 50"
-    width="50px"
-    height="50px"
+    width="42px"
+    height="42px"
     role="img"
   >
     <title>Mardy bakery Instagram account</title>

@@ -1,5 +1,4 @@
 import React from "react"
-import _get from "lodash/get"
 
 import SEO from "../components/seo"
 import { About } from "../components/main/v2/pages/about"

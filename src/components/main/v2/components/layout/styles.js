@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components"
+import styled from "styled-components"
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -24,7 +24,11 @@ export const layoutContainer = {
 
 
 export const Main = styled.main`
-  padding: 0 60px;
+  padding: 0 3rem 4rem;
+
+  @media (min-width: 1200px) {
+    padding: 0 3.75rem 4rem;
+  }
 `
 
 export const Banner = styled.div`
