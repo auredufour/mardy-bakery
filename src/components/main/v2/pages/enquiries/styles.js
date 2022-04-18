@@ -46,15 +46,7 @@ export const InputContainer = styled.div`
   margin-bottom: 1rem;
 
   @media (min-width: 500px) {
-    width: ${({ width }) => width || "50%"};
-
-    &:nth-child(3) {
-      padding-right: 0.5rem;
-    }
-
-    &:nth-child(4) {
-      padding-left: 0.5rem;
-    }
+    width: ${({ width }) => width || "49%"};
   }
 `
 
@@ -100,4 +92,14 @@ export const Message = styled.div`
   padding: 1rem 1rem 0.8rem; 
   margin-bottom: 1rem; 
   border-radius: 10px;
+`
+
+export const UserInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 500px) {
+   flex-direction: row;
+   justify-content: space-between;
+  }
 `

@@ -58,6 +58,7 @@ export const Sidebar = styled.div`
   transition: left 0.4s ease;
   z-index: 10;
   visibility: ${({ isShowing }) => (isShowing ? "visible" : "hidden")};
+  margin-top: 0.5rem;
 
   @media (min-width: 820px) {
     width: calc(30% + 3rem);
