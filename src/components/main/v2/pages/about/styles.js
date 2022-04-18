@@ -58,12 +58,12 @@ export const FoodImage = styled.div`
     }
 
     &:nth-child(3) {
-      bottom: 2rem;
+      bottom: 5rem;
       left: -100px;
     }
 
     &:nth-child(4) {
-      bottom: 2rem;
+      bottom: 5rem;
       right: -100px;
     }
   }

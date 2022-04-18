@@ -11,17 +11,18 @@ export const TandC = () => {
         <Header level="2" uppercase style={{ marginBottom: "2rem" }}>
           Allergens
         </Header>
-        <Text>
+        <Text margin="0 0 1rem 0">
           All our foods and bakes are prepared and baked in our kitchen, which
           contains and uses the following allergens: celery, cereals containing
           gluten, eggs, fish, lupin, milk, mustard, nuts, peanuts, sesame seeds,
           soya and sulpur dioxide.
         </Text>
-        <Text>
+        <Text margin="0 0 1rem 0">
           While we take great care to avoid cross-contamination, we cannot
-          promise our products to be completly free from trace of said allergens.
+          promise our products to be completly free from trace of said
+          allergens.
         </Text>
-        <Text>
+        <Text margin="0 0 1rem 0">
           Allergens information is displayed in our shop and on pre-packaged
           items, and our staff are qualified to answer any questions you may
           have concerning allergens and ingredients.
@@ -40,10 +41,8 @@ export const TandC = () => {
         </Header>
         <Text>
           Please contact{" "}
-          <a href="mailto:info@mardybakery.com">
-            info@mardybakery.com
-          </a>{" "}
-          to receive a full copy of our privacy policy.
+          <a href="mailto:info@mardybakery.com">info@mardybakery.com</a> to
+          receive a full copy of our privacy policy.
         </Text>
       </SubSection>
     </Layout>
