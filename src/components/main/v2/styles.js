@@ -50,6 +50,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Futura BT-Book";
     background-color: #FAB4AB;
     color: #e4352b;
+    line-height: calc(1rem * 1.5);
   }
 
   ul {

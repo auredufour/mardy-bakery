@@ -11,6 +11,7 @@ import {
   EnquiriesContainer,
   Message,
   FormContainer,
+  UserInfoContainer,
 } from "./styles"
 
 function encode(data) {
@@ -96,28 +97,30 @@ export const Enquiries = () => {
                 />
               </label>
             </p>
-            <InputContainer>
-              <Label htmlFor="name">Name*</Label>
-              <Input
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="name"
-                required
-                onChange={handleChange}
-              />
-            </InputContainer>
-            <InputContainer>
-              <Label htmlFor="email">Email*</Label>
-              <Input
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="email"
-                required
-                onChange={handleChange}
-              />
-            </InputContainer>
+            <UserInfoContainer>
+              <InputContainer>
+                <Label htmlFor="name">Name*</Label>
+                <Input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  onChange={handleChange}
+                />
+              </InputContainer>
+              <InputContainer>
+                <Label htmlFor="email">Email*</Label>
+                <Input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  onChange={handleChange}
+                />
+              </InputContainer>
+            </UserInfoContainer>
             <InputContainer width="100%">
               <Label htmlFor="subject">Subject*</Label>
               <Input
