@@ -46,9 +46,13 @@ export const GlobalStyles = createGlobalStyle`
     font-style: normal;
   }
 
-body{
+  body, p {
     font-family: "Futura BT-Book";
     background-color: #FAB4AB;
     color: #e4352b;
+  }
+
+  ul {
+    list-style-type: none;
   }
 `
