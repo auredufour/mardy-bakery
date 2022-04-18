@@ -19,6 +19,9 @@ export const About = () => {
         <FoodImage>
           <StaticImage
             src="../../assets/images/MB-biscuit.jpg"
+            imgStyle={{
+              borderRadius: "50%",
+            }}
             style={{
               border: "4px solid rgba(320, 320, 320, 0.3)",
               borderRadius: "50%",
@@ -28,6 +31,7 @@ export const About = () => {
         <FoodImage>
           <StaticImage
             src="../../assets/images/MB-chou.jpg"
+            imgStyle={{ borderRadius: "50%" }}
             style={{
               border: "4px solid rgba(320, 320, 320, 0.3)",
               borderRadius: "50%",
@@ -37,6 +41,7 @@ export const About = () => {
         <FoodImage>
           <StaticImage
             src="../../assets/images/MB-ice-cream-cookie.jpg"
+            imgStyle={{ borderRadius: "50%" }}
             style={{
               border: "4px solid rgba(320, 320, 320, 0.3)",
               borderRadius: "50%",
@@ -46,6 +51,7 @@ export const About = () => {
         <FoodImage>
           <StaticImage
             src="../../assets/images/MD-pie.jpeg"
+            imgStyle={{ borderRadius: "50%" }}
             style={{
               border: "4px solid rgba(320, 320, 320, 0.3)",
               borderRadius: "50%",
