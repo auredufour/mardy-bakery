@@ -1,5 +1,4 @@
 import React from "react"
-import _get from "lodash/get"
 import { Layout } from "../../components/layout"
 import {Text} from "../../components/text"
 import { Header } from '../../components/header'
@@ -20,10 +19,10 @@ export const TandC = () => {
         </Text>
         <Text>
           While we take great care to avoid cross-contamination, we cannot
-          promise our productsto be completly free from trace of said allergens
+          promise our products to be completly free from trace of said allergens.
         </Text>
         <Text>
-          Allergens information is displayed in our shop and on pre-packages
+          Allergens information is displayed in our shop and on pre-packaged
           items, and our staff are qualified to answer any questions you may
           have concerning allergens and ingredients.
         </Text>
@@ -32,7 +31,7 @@ export const TandC = () => {
           customer does not inform us of any allergy information prior to
           ordering and consuming our products, and it is the responsability of
           the customer to inform those who are consuming the products if not
-          consuming them themselves
+          consuming them themselves.
         </Text>
       </SubSection>
       <SubSection>

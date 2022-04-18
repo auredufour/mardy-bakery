@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 import FuturaBTBoldEOT from "../../assets/fonts/FuturaBT-Bold.eot"
 import FuturaBTBoldWOFF2 from "../../assets/fonts/FuturaBT-Bold.woff2"
 import FuturaBTBoldWOFF from "../../assets/fonts/FuturaBT-Bold.woff"
@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     font-style: normal;
   }
 
-  @font-face {
+  @font-face {/src/pages/404.js
     font-family: 'Futura BT-Medium';
     src:
       url(${FuturaBTMediumEOT}) format('embedded-opentype'),

@@ -1,5 +1,4 @@
-import styled, { css } from "styled-components"
-import { StaticImage } from "gatsby-plugin-image"
+import styled from "styled-components"
 
 export const ListContainer = styled.ul`
   margin-bottom: 0;
@@ -28,7 +27,7 @@ export const ListContainer = styled.ul`
 
 export const Container = styled.div`
   width: 100%;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
 
   @media (min-width: 1200px) {
     width: 60%;
@@ -36,12 +35,12 @@ export const Container = styled.div`
 `
 
 export const FoodImage = styled.div`
-  width: 140px;
-  height: 140px;
+  border-radius: 8.75rem;
   border: 4px solid rgba(320, 320, 320, 0.3);
-  border-radius: 50%;
-  overflow: hidden;
   display: inline-block;
+  height: 8.75rem;
+  overflow: hidden;
+  width: 8.75rem;
 
   @media (min-width: 1200px) {
     position: absolute;

@@ -1,22 +1,28 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
 export const Toggle = styled.button`
-  transition: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-around;
   height: 2rem;
-  padding: 0 1rem;
-  width: 4rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+  justify-content: space-around;
   margin: 0;
-  z-index: 10;
   overflow: hidden;
+  padding: 0;
+  transition: none;
+  z-index: 10;
+  padding: 0 0.2rem;
 
-  &:focus {
-    mb-v2-fix2
+  &:focus:hover {
+    outline: 0;
+  }
+
+  &:focus:not(:hover) {
+    border-radius: 10px;
+    outline-offset: 0.2rem;
+    outline: 1px solid white;
   }
 
   div {

@@ -1,18 +1,24 @@
-import React from "react"
+import React, {forwardRef} from "react"
 import { Toggle } from './styles'
 
 
-export const BurgerToggle = ({ isToggled, toggleSideNav }) => (
-    <Toggle isOpen={isToggled} onClick={toggleSideNav}>
-      <div>
-        <span></span>
-      </div>
-      <div>
-        <span></span>
-      </div>
-      <div>
-        <span></span>
-      </div>
-    </Toggle>
-  )
-
+export const BurgerToggle = forwardRef(({ isToggled, toggleSideNav }, ref) => (
+  <Toggle
+    isOpen={isToggled}
+    onClick={toggleSideNav}
+    aria-haspopup={true}
+    aria-expanded={isToggled}
+    aria-label="Menu"
+    ref={ref}
+  >
+    <div>
+      <span></span>
+    </div>
+    <div>
+      <span></span>
+    </div>
+    <div>
+      <span></span>
+    </div>
+  </Toggle>
+))

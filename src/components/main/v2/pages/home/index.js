@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import _get from "lodash/get"
 import { ImageSection } from "./styles"
 import { Layout } from "../../components/layout"
 

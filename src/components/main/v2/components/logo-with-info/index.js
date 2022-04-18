@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
 
 import {Header} from '../header'
 import {Text} from '../text'
@@ -29,12 +28,12 @@ const Hours = () => (
     <Header level="3" uppercase>
       Opening hours
     </Header>
-    <Text>Tuesday - Saturday</Text>
+    <Text>Wednesday-Saturday</Text>
     <Text>10am-4pm</Text>
   </SideContainerRight>
 )
 
-export const LogoWithInfo = ({ withInfo, headerText }) => {
+export const LogoWithInfo = ({ withInfo }) => {
   return (
     <Section>
       <Header level="2" isSROnly>

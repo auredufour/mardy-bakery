@@ -1,5 +1,4 @@
-import React, {setState} from "react"
-import _get from "lodash/get"
+import React from "react"
 import { Layout } from "../../components/layout"
 import {Text} from '../../components/text'
 import {
@@ -11,6 +10,7 @@ import {
   SubmissionContainer,
   EnquiriesContainer,
   Message,
+  FormContainer,
 } from "./styles"
 
 function encode(data) {
@@ -57,18 +57,24 @@ export const Enquiries = () => {
           Feel free to get in touch using the form below and we will get back to
           you as soon as possible!
         </Text>
-        <div style={{ margin: "2rem 0" }}>
+        <FormContainer>
           {formState === "success" && (
             <Message>
               <Text aria-live="polite">
-                🎉 Your message has been successfully sent!
+                <span role="img" aria-label="Congratulation! ">
+                  🎉
+                </span>{" "}
+                Your message has been successfully sent!
               </Text>
             </Message>
           )}
           {formState === "error" && (
             <Message>
               <Text aria-live="polite">
-                ⚠️ There was an error with your message, please try again!
+                <span role="img" aria-label="Warning! ">
+                  ⚠️
+                </span>{" "}
+                There was an error with your message, please try again!
               </Text>
             </Message>
           )}
@@ -136,7 +142,7 @@ export const Enquiries = () => {
               <SendButton type="submit">Send message</SendButton>
             </SubmissionContainer>
           </form>
-        </div>
+        </FormContainer>
       </EnquiriesContainer>
     </Layout>
   )

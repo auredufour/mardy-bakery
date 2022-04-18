@@ -5,8 +5,8 @@ export const FacebookIcon = () => (
     fill="#e4352b"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 50 50"
-    width="50px"
-    height="50px"
+    width="43.5px"
+    height="43.5px"
     role="img"
   >
     <title>Mardy bakery Facebook account</title>

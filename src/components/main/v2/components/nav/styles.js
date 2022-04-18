@@ -1,6 +1,5 @@
-import styled, { css, keyframes } from "styled-components"
+import styled  from "styled-components"
 import { Link } from "gatsby"
-
 
 export const hiddenStyles = {
   position: "absolute",
@@ -19,7 +18,7 @@ export const NavContainer = styled.nav`
   width: 100%;
 
   @media (min-width: 1200px) {
-    padding: 2rem 0 0;
+    padding: 2rem 3.75rem 0;
   }
 `
 
@@ -43,8 +42,11 @@ export const SocialMediaItem = styled.li`
 //// Menu
 export const BurgerToggleContainer = styled.div`
   position: relative;
-  padding; 0;
-  mergin: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -0.55rem;
+  align-self: center;
 `
 
 export const Sidebar = styled.div`
@@ -72,6 +74,14 @@ export const MenuContainer = styled.ul`
   display: flex;
   flex-direction: column;
   padding: 4rem 3rem;
+
+  @media (min-width: 1200px) {
+    padding: 4rem 2.2rem;
+  }
+
+  @media (min-width: 1340px) {
+    padding: 4rem 3rem;
+  }
 `
 
 export const MenuItem = styled.li`
@@ -87,7 +97,8 @@ export const MenuLink = styled(Link)`
   letter-spacing: 6px;
   display: ${({ isShowing }) => (isShowing ? "block" : "none")};
 
-  &:hover {
+  &:hover, &:focus {
+    outline: 0;
     text-decoration: underline;
   }
 `
