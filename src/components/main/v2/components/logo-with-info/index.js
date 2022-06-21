@@ -31,7 +31,7 @@ const Hours = () => (
     <Text>Tuesday - Saturday</Text>
     <Text>10am - 4pm</Text>
     <Text>Sunday</Text>
-    <Text>10 - 1</Text>
+    <Text>10am - 1pm</Text>
   </SideContainerRight>
 )
 
