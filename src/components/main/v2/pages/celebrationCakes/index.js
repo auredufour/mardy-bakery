@@ -89,7 +89,7 @@ export const CelebrationCakes = () => {
           <ImageContainer>
             <StaticImage
               alt=''
-              src='../../assets/images/cake-4.jpg'
+              src='../../assets/images/cake-5.jpg'
             />
           </ImageContainer>
           <div>
@@ -113,7 +113,7 @@ export const CelebrationCakes = () => {
           <ImageContainer>
             <StaticImage
               alt=''
-              src='../../assets/images/cake-5.jpg'
+              src='../../assets/images/cake-4.jpg'
             />
           </ImageContainer>
           <div>
