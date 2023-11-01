@@ -28,10 +28,10 @@ const Hours = () => (
     <Header level="3" uppercase>
       Opening hours
     </Header>
-    <Text>Tuesday - Saturday</Text>
+    <Text>Friday - Saturday</Text>
     <Text>10am - 4pm</Text>
     <Text>Sunday</Text>
-    <Text>10am - 1pm</Text>
+    <Text>11am - 3pm</Text>
   </SideContainerRight>
 )
 

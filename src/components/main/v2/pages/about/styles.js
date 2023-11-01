@@ -27,59 +27,28 @@ export const ListContainer = styled.ul`
 
 export const Container = styled.div`
   width: 100%;
-  margin: 2rem auto 0;
+  margin-bottom: 2rem;
   
+  @media (min-width: 860px) {
+    width: 100%;
+    display: flex;
+  }
+`
 
-  @media (min-width: 1200px) {
-    width: 60%;
+export const HeroImageContainer = styled.div`
+ textAlign: center;
+ margin: 0 auto;
+ width: 85%;
+ margin-bottom: 2rem;
+  
+  @media (min-width: 860px) {
+    margin-right: 2rem;
+    margin-bottom: 0;
   }
 `
 
 export const FoodImage = styled.div`
-  display: inline-block;
-  height: 8.75rem;
-  width: 8.75rem;
-
-  &:nth-child(1),
-  &:nth-child(3) {
-    margin-right: 0.25rem;
-  }
-
-  &:nth-child(2),
-  &:nth-child(4) {
-    margin-left: 0.25rem;
-  }
-
-  &:nth-child(3),
-  &:nth-child(4) {
-    margin-top: 0.5rem;
-  }
-
-  @media (min-width: 1200px) {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-
-    &:nth-child(1) {
-      top: 8rem;
-      left: -100px;
-    }
-
-    &:nth-child(2) {
-      top: 8rem;
-      right: -100px;
-    }
-
-    &:nth-child(3) {
-      bottom: 5rem;
-      left: -100px;
-    }
-
-    &:nth-child(4) {
-      bottom: 5rem;
-      right: -100px;
-    }
-  }
+  width: 32%;
 `
 
 export const staticImageStyle = css`
@@ -91,6 +60,6 @@ export const staticImageStyle = css`
 
 export const ImageContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 `
