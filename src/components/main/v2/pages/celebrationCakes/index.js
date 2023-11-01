@@ -160,7 +160,7 @@ export const CelebrationCakes = () => {
         <StaticImage
         src="../../assets/images/cakes.png"
         style={{
-          border: "4px solid rgba(320, 320, 320, 0.3)",
+          border: "10px solid rgba(320, 320, 320, 0.3)",
         }}
       />
         </Container>
