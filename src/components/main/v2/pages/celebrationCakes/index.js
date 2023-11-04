@@ -14,6 +14,9 @@ import { Header } from "../../components/header"
 export const CelebrationCakes = () => {
   return (
     <Layout headerText="Celebration Cakes">
+      <div style={{ textAlign: 'center', width: '100%', margin: '2rem 0'}}>
+        <Text>To order our celebration cakes, please email <a href="mailto:info@mardybakery.com">info@mardybakery.com</a></Text>
+      </div>
       <Container>
         <CakeContainer>
           <ImageContainer>
