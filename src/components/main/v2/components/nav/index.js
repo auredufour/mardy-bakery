@@ -23,6 +23,7 @@ export const Nav = () => {
    const links = {
     home: "Home",
     about: "About",
+    celebrationCakes: 'Celebration cakes',
     enquiries: "Enquiries",
     tandc: "T&Cs",
   }
